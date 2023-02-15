@@ -31,6 +31,24 @@ nav {
     align-items: center;
 }
 
+.cakes {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.cakes-img {
+	width: 100%;
+}
+
+.cakes-img img {
+	display: block;
+	width: 80%;
+	margin: 40px auto;
+	border-radius: 5%;
+}
+
 .para-div {
 	font-family: 'Josefin Sans', sans-serif;
     font-size: 1.6rem;
