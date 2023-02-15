@@ -22,7 +22,7 @@ nav {
 
 .about {
     /* Photo by Brent Keane: https://www.pexels.com/photo/white-icing-cover-cake-1702373/ */
-    background: linear-gradient(to bottom right, rgba(245, 245, 245, 0.52), rgba(179, 146, 172, 0.73)),
+    background: linear-gradient(to bottom right, rgba(179, 146, 172, 0.4), rgba(179, 146, 172, 0.9)),
     top center / cover no-repeat url(images/pexels-brent-keane-1702373.jpg);
     height: 92vh;
     display: flex;
@@ -33,9 +33,17 @@ nav {
 
 .para-div {
 	font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 	color: rgba(255, 255, 255, 1);
     width: 80%;
+	height: 60vh;
+	display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+}
+
+.para-div p {
+	line-height: 1.8rem;
 }
 
 .burger {
