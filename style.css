@@ -22,7 +22,7 @@ nav {
 
 .about {
     /* Photo by Brent Keane: https://www.pexels.com/photo/white-icing-cover-cake-1702373/ */
-    background: linear-gradient(to bottom right, rgba(179, 146, 172, 0.4), rgba(179, 146, 172, 0.9)),
+    background: linear-gradient(to bottom right, rgba(79, 79, 79, 0.5), rgba(179, 146, 172, 0.5)),
     top center / cover no-repeat url(images/pexels-brent-keane-1702373.jpg);
     height: 92vh;
     display: flex;
