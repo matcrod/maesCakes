@@ -1,6 +1,110 @@
 *,
 *::before,
 *::after {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: rgba(179, 146, 172, 0.9);
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+.about {
+    /* Photo by Brent Keane: https://www.pexels.com/photo/white-icing-cover-cake-1702373/ */
+    background: linear-gradient(to bottom right, rgba(245, 245, 245, 0.52), rgba(179, 146, 172, 0.73)),
+    top center / cover no-repeat url(images/pexels-brent-keane-1702373.jpg);
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.para-div {
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+	color: rgba(255, 255, 255, 1);
+    width: 80%;
+}
+
+.burger {
+	display: none;
+}
+
+.burger div {
+	width: 25px;
+	height: 3px;
+	margin-bottom: 4px;
+	background-color: rgba(255, 255, 255, 0.795);
+	border-radius: 3px;
+	transition: transform 0.5s ease-in;
+}
+
+.link {
+	color: rgba(255, 255, 255, 0.795);
+	text-decoration: none;
+	font-size: 1.3rem;
+}
+
+.link:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+.logo {
+	color: rgba(255, 255, 255, 0.795);
+	letter-spacing: 2px;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		overflow-x: hidden;
+	}
+
+	.burger {
+		display: block;
+		cursor: pointer;
+	}
+
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: rgba(179, 146, 172, 0.9);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+.bars {
+	transform: rotateY(50deg);
+}
